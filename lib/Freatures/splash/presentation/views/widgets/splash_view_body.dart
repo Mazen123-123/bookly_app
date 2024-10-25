@@ -25,8 +25,6 @@ class _SplashViewBodyState extends State<SplashViewBody> with SingleTickerProvid
     NavigateToHome();
   }
 
- 
-
   @override
   void dispose() {
     super.dispose();
@@ -49,12 +47,12 @@ class _SplashViewBodyState extends State<SplashViewBody> with SingleTickerProvid
       ],
     );
   }
-     void NavigateToHome() {
+
+  void NavigateToHome() {
     Future.delayed(const Duration(seconds: 2), () {
       Get.to(() => const HomeView(), transition: Transition.fade, duration: KTransitionDuration);
     });
   }
-
 
   void initSlidingAnimation() {
     animationController = AnimationController(
